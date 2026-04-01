@@ -1,0 +1,6 @@
+﻿  contact.c
+  text.c
+  正在生成代码...
+C:\Users\28641\source\repos\Contact\contact.c(251,27): warning C4133: “函数”: 从“Peoinfo *”到“const char *”的类型不兼容
+C:\Users\28641\source\repos\Contact\contact.c(251,43): warning C4133: “函数”: 从“Peoinfo *”到“const char *”的类型不兼容
+  Contact.vcxproj -> C:\Users\28641\source\repos\Contact\x64\Debug\Contact.exe
