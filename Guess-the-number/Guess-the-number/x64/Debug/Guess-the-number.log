@@ -1,0 +1,4 @@
+﻿  guess-the-number.c
+D:\Develop\Visual studio2022\code\Guess-the-number\guess-the-number.c(14,2): warning C4013: “srand”未定义；假设外部返回 int
+D:\Develop\Visual studio2022\code\Guess-the-number\guess-the-number.c(16,12): warning C4013: “rand”未定义；假设外部返回 int
+  Guess-the-number.vcxproj -> D:\Develop\Visual studio2022\code\Guess-the-number\x64\Debug\Guess-the-number.exe
