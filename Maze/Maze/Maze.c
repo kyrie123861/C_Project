@@ -9,8 +9,6 @@ typedef struct Pt
 	int col;
 }PT;
 
-
-
 void PrintMaze(int** maze, int N, int M)
 {
 	for (int i = 0; i < N; i++)
@@ -23,7 +21,6 @@ void PrintMaze(int** maze, int N, int M)
 
 	}
 }
-
 
 bool isPass(int** maze, int N, int M, PT pos)
 {
@@ -42,7 +39,7 @@ bool isPass(int** maze, int N, int M, PT pos)
 
 bool GetMazePath(int** maze, int N, int M, PT cur)
 {
-	if (cur.col == M - 1, cur.row == N - 1)
+	if (cur.col == M - 1 && cur.row == N - 1)
 	{
 		return true;
 	}
@@ -90,12 +87,11 @@ bool GetMazePath(int** maze, int N, int M, PT cur)
 	return false;
 }
 
-
-
 int main()
 {
 	int N = 0, M = 0;
-	scanf("%d %d", &N, &M);
+	printf("请输入迷宫的行数和列数：\n");
+	scanf_s("%d %d", &N, &M);
 
 	int** maze = (int**)malloc(sizeof(int*) * N);
 	for (int i = 0; i < N; i++)
@@ -104,11 +100,12 @@ int main()
 	}
 
 	//输入二维数组
+	printf("请输入迷宫地图(0=路,1=墙)：\n");
 	for (int i = 0; i < N; i++)
 	{
 		for (int j = 0; j < M; j++)
 		{
-			scanf("%d", &maze[i][j]);
+			scanf_s("%d", &maze[i][j]);
 		}
 
 	}
